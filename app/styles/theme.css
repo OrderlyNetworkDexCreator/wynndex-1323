@@ -67,7 +67,7 @@
 
   --oui-gradient-brand-start: 0 255 0;
   --oui-gradient-brand-end: 10 10 10;
-  --oui-gradient-brand-stop-start: 6.62%;
+  --oui-gradient-brand-stop-start: 16.62%;
   --oui-gradient-brand-stop-end: 99.5%;
   --oui-gradient-brand-angle: 17.44deg;
 
@@ -78,12 +78,12 @@
   --oui-gradient-neutral-end: 38 41 46;
 
   /* rounded */
-  --oui-rounded-sm: 1px;
-  --oui-rounded: 1px;
+  --oui-rounded-sm: 0px;
+  --oui-rounded: 0px;
   --oui-rounded-md: 3px;
-  --oui-rounded-lg: 1px;
-  --oui-rounded-xl: 1px;
-  --oui-rounded-2xl: 1px;
+  --oui-rounded-lg: 0px;
+  --oui-rounded-xl: 0px;
+  --oui-rounded-2xl: 0px;
   --oui-rounded-full: 9999px;
 
   /* spacing */
