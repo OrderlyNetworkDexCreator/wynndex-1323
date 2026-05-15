@@ -19,7 +19,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_HAS_PRIMARY_LOGO": "true",
   "VITE_HAS_SECONDARY_LOGO": "true",
   "VITE_ENABLED_MENUS": "Trading,Markets,Portfolio,Rewards,Vaults,Leaderboard",
-  "VITE_CUSTOM_MENUS": "About me, https://www.google.com/",
+  "VITE_CUSTOM_MENUS": "About WYNN DEX, https://www.google.com/",
   "VITE_ENABLE_SERVICE_DISCLAIMER_DIALOG": "true",
   "VITE_ENABLE_CAMPAIGNS": "false",
   "VITE_TELEGRAM_URL": "https://t.me/Wynn_Trades",
