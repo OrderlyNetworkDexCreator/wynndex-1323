@@ -5,7 +5,7 @@
   /* colors */
   --oui-color-primary: 3 255 0;
   --oui-color-primary-light: 0 255 0;
-  --oui-color-primary-darken: 255 255 255;
+  --oui-color-primary-darken: 3 255 0;
   --oui-color-primary-contrast: 25 13 28;
 
   --oui-color-link: 3 255 0;
@@ -20,9 +20,9 @@
   --oui-color-danger-darken: 230 46 26;
   --oui-color-danger-contrast: 255 255 255;
 
-  --oui-color-success: 17 157 88;
-  --oui-color-success-light: 17 157 88;
-  --oui-color-success-darken: 15 157 88;
+  --oui-color-success: 3 255 0;
+  --oui-color-success-light: 3 255 0;
+  --oui-color-success-darken: 3 255 0;
   --oui-color-success-contrast: 255 255 255;
 
   --oui-color-warning: 255 209 70;
@@ -97,4 +97,11 @@
 html, body {
   font-family: 'Satoshi', 'Inter Tight', 'Helvetica Neue', Arial, sans-serif !important;
   font-size: 16px !important;
+}
+
+.orderly-app-container,
+.orderly-app-container *,
+.orderly-app-container *::before,
+.orderly-app-container *::after {
+  font-family: 'Satoshi', 'Inter Tight', 'Helvetica Neue', Arial, sans-serif !important;
 }
