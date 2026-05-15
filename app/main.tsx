@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import App from './App';
+import { ErrorBoundary } from './components/ErrorBoundary';
 import { withBasePath } from './utils/base-path';
 import { getRuntimeConfig } from './utils/runtime-config';
 
@@ -32,6 +33,9 @@ const VaultsLayout = lazy(() => import('./pages/vaults/Layout'));
 const VaultsIndex = lazy(() => import('./pages/vaults/Index'));
 const SwapLayout = lazy(() => import('./pages/swap/Layout'));
 const SwapIndex = lazy(() => import('./pages/swap/Index'));
+const PointsLayout = lazy(() => import('./pages/points/Layout'));
+const PointsIndex = lazy(() => import('./pages/points/Index'));
+
 
 async function loadRuntimeConfig() {
   return new Promise<void>((resolve) => {
@@ -79,6 +83,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement: <ErrorBoundary />,
     children: [
       { index: true, element: <IndexPage /> },
       {
@@ -137,6 +142,13 @@ const router = createBrowserRouter([
         element: <SwapLayout />,
         children: [
           { index: true, element: <SwapIndex /> },
+        ],
+      },
+      {
+        path: 'points',
+        element: <PointsLayout />,
+        children: [
+          { index: true, element: <PointsIndex /> },
         ],
       },
     ],
